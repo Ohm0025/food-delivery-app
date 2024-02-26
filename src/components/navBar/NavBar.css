@@ -1,0 +1,19 @@
+.nav-sticky-head {
+  transition: 0.3s;
+}
+/*  */
+/* these are the styles when the user scrolls */
+.nav-sticky-head.resize {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-sticky-head.resize > div {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-sticky-head.resize img {
+  height: 50px; /* <=== here i gived the image a smaller size */
+}

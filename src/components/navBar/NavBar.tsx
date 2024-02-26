@@ -1,10 +1,16 @@
+import { useRef } from "react";
 import logoWeb from "../../assets/logo.svg";
+import useNavBar from "./NavBar.hook";
+import "./NavBar.css";
 
-type Props = {};
-
-const NavBar = (props: Props) => {
+const NavBar = () => {
+  const navRef = useRef<HTMLDivElement>(null);
+  const {} = useNavBar(navRef);
   return (
-    <div className="w-full bg-[white] h-[156px]">
+    <div
+      ref={navRef}
+      className="nav-sticky-head w-full bg-[white] h-[156px] sticky top-0 left-0 z-50"
+    >
       <div className="flex justify-between items-center max-w-screen-xl mx-auto">
         <div className="flex-1 pl-4">
           <img src={logoWeb} alt="logo-web" className="w-[206px] h-auto" />
