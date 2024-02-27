@@ -29,7 +29,7 @@ const Cover = () => {
   }, []);
 
   return (
-    <div id="cover-component" className="relative mb-[-260px]">
+    <div id="cover-component" className="relative mb-[-200px]">
       <div className="w-full h-auto bg-cover-pattern bg-cover bg-no-repeat text-[white] flex flex-col items-center pt-[73px] pb-[146px] gap-[52px]">
         <span className="font-bold text-[14px] sm:text-[24px]">Food app</span>
         <div className="font-bold text-[20px] sm:text-[40px] lg:text-[58px] text-center max-w-[968px] flex flex-col">
